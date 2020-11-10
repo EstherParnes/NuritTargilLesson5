@@ -1,0 +1,23 @@
+﻿<Window x:Name="FirtWindow" x:Class="NuritTargilLesson5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NuritTargilLesson5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="WindowLoad">
+   <Canvas>
+      <ListBox x:Name="ListBoxCities" Height="211" Canvas.Left="59" Canvas.Top="44" Width="207" SelectionChanged="ListBox_SelectionChanged">
+         <ListBox.Items>
+         <ListBoxItem Content=""/>
+         <ListBoxItem Content="Jerusalem"/>
+         <ListBoxItem Content="Tel Aviv"/>
+         <ListBoxItem  Content="Efrat"/>
+        </ListBox.Items>
+      </ListBox>
+      <Button x:Name="ButtonAdd" Content="Add me to the list
+              " Canvas.Left="412" Canvas.Top="145" Width="174" Height="24" Visibility="Hidden" Click="ButtonClick_Event"/>
+      <TextBox x:Name="TextBoxAdd" Height="29" Canvas.Left="412" TextWrapping="Wrap" Text="Name to be added" Canvas.Top="78" Width="174" Visibility="Hidden" TextChanged="TextChanged_Event"/>
+
+   </Canvas>
+</Window>
